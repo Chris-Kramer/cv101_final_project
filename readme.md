@@ -130,9 +130,9 @@ python find_skins.py --image AK-47_Baroque_Purple.png --n_neighbours 6
 #### Example:  
 _With bash script_
 ```console
-bash run-style_tranfer.sh --content_image AK-47_Hydroponic.png --style_image AK-47_Fuel_Injector.png --output_image AK-47_hydro_fuel.png --image_size 300 300
+bash run-style_transfer.sh --content_image AK-47_Hydroponic.png --style_image AK-47_Fuel_Injector.png --output_image AK-47_hydro_fuel.png --image_size 300 300
 ```  
 _Without bash script_
 ```console
-python style_tranfer.py --content_image AK-47_Hydroponic.png --style_image AK-47_Fuel_Injector.png --output_image AK-47_hydro_fuel.png --image_size 300 300
+python style_transfer.py --content_image AK-47_Hydroponic.png --style_image AK-47_Fuel_Injector.png --output_image AK-47_hydro_fuel.png --image_size 300 300
 ```  
