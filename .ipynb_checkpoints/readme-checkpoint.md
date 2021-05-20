@@ -1,7 +1,7 @@
 # Final Project - Skin Tools: Nearest Neighbours
 **Christoffer Kramer**  
 **20-05-2021**  
-**Linke to pixplot visualization:** http://kramer-final-project.000webhostapp.com/  
+**Link to pixplot visualization:** http://kramer-final-project.000webhostapp.com/  
 
 ## Description
 This repository uses image embeddings as a tool for investigating cosmetic virtual items, also known as skins, in the video game Counter-Strike Global Offensive (CSGO). I’ve used image em-beddings to create the following tools:
