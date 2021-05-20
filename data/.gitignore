@@ -4,3 +4,6 @@ all_weapons
 knives
 rarity
 weapon_model
+metadata.csv
+pixplot_metadata.csv
+pixplot_metadata_knives.csv
