@@ -1,4 +1,4 @@
-# Final Project - Skin Tools: Nearest Neighbours
+# Final Project - Skins in Counter-Strike Global Offensive
 **Christoffer Kramer**  
 **20-05-2021**  
 **Link to pixplot visualization:** http://kramer-final-project.000webhostapp.com/  
