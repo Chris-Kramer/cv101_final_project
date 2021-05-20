@@ -31,7 +31,7 @@ www.kaggle.com/dataset/f278d9db7acf516c92626e8407b3c54cc33e11825e36935d9d8bdacba
 git clone https://github.com/Chris-Kramer/cv101_final_project.git  
  ```
 **Step 2 - Navigate to folder:**
-- Navigate to the folder "cv101_assignment_3".
+- Navigate to the folder "cv101_final_project".
 ```console
 cd cv101_final_project
 ```  
