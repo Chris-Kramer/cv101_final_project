@@ -4,21 +4,21 @@
 **Link to pixplot visualization:** http://kramer-final-project.000webhostapp.com/  
 
 ## Description
-This repository uses image embeddings as a tool for investigating cosmetic virtual items, also known as skins, in the video game Counter-Strike Global Offensive (CSGO). I’ve used image em-beddings to create the following tools:
+This repository uses image embeddings as a tool for investigating cosmetic virtual items, also known as skins, in the video game Counter-Strike Global Offensive (CSGO). I’ve used image embeddings to create the following tools:
 - Style-transfer (style_transfer.py)
 - Pixplot visualizations 
 - A search tool (find_skins.py)  
 
-The search tool takes an input image and finds the specified number of nearest embedding neigh-bors. The style transfer tool takes two inputs: a content image and a style image. It then uses arbi-trary style transfer to create a new skin.  
+The search tool takes an input image and finds the specified number of nearest embedding neighbors. The style transfer tool takes two inputs: a content image and a style image. It then uses arbitrary style transfer to create a new skin.  
 I’ve put the pixplot visualizations on a small website, which can be found here: http://kramer-final-project.000webhostapp.com/index.html. Note that the website uses a free hosting service, and I’m not trained in optimizing performance on websites. Therefore, the website might be a bit slow, but it works. However, you need to have WebGL enabled (this is enabled by default in most modern browsers) for the site to work.
 You can read more about pixplot, and how it works, here: https://dhlab.yale.edu/projects/pixplot/. 
 
 
 ## Methods
-To generate the pixplot visualization, I’ve created a script for web-scraping the image and the as-sociated metadata for each skin. I’m web-scraping from this website: https://www.csgodatabase.com/weapons/. The image embeddings for style transfer come from the magenta model https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2, and the search tool uses the VGG16 model https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG16 to find the K-nearest embedding neighbors.  
+To generate the pixplot visualization, I’ve created a script for web scraping the image and the associated metadata for each skin. I’m web scraping from this website: https://www.csgodatabase.com/weapons/. The image embeddings for style transfer come from the magenta model https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2, and the search tool uses the VGG16 model https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG16 to find the K-nearest embedding neighbors.  
 
 ## Usage  
-This should work on both Linux, Mac, and Windows. However, If you are running on a local win-dows machine, you should run it from a bash emulator such as git bash. 
+This should work on both Linux, Mac, and Windows. However, If you are running on a local windows machine, you should run it from a bash emulator such as git bash. 
 Before you can run the style transfer script and the search tool, you have to get the data. This data can be gathered by using the web scrape script.
 However, since websites change all the time, my script might not work in the future. Therefore, I’ve also uploaded my data set to Kaggle:
 www.kaggle.com/dataset/f278d9db7acf516c92626e8407b3c54cc33e11825e36935d9d8bdacbaff88188  
@@ -88,22 +88,22 @@ The script for web scraping creates 4 subfolders in the data folder: “all_weap
             - etc.
 
 ### Seach tool (find_skins.py)
-This script creates a subfolder with the input image’s name in the folder “find_skins”. The folder contains the target image, the n nearest neighbors (n can be specified by the user), and a CSV file with the neighbors' filenames and their neighbor number. See the readme file for further specifi-cations on output.  
+This script creates a subfolder with the input image’s name in the folder “find_skins”. The folder contains the target image, the n nearest neighbors (n can be specified by the user), and a CSV file with the neighbors' filenames and their neighbor number.
 - output
     - find_skins_dir
         - input_image_name_dir
             - neighbours.csv
             - TARGET_image_name.png
             - neighbour_1.png
-            - neighbour_2-png
+            - neighbour_2.png
             - etc.
 
 ### Style transfer (style_transfer.py)
-The style transfer script creates a single plot containing the original image, the style image, and the stylized image. The output is located in the subfolder “style_tranfer” and the name of the out-put image can be specified by the user.  
+The style transfer script creates a single plot containing the original image, the style image, and the stylized image. The output is located in the subfolder “style_tranfer” and the name of the output image can be specified by the user.  
 
 ## Parameters
 The search tool and the style transfer tool takes parameters. They have been supplied with default values.  
-### run-find_skins.sh / find_skins-py
+### run-find_skins.sh / find_skins.py
 - `--image ` The target image that you wan't to find nearest neighbours for. It must be located in the subfolder “all_weapons” in the 'data folder.  
     - DEFAULT = Butterfly_Knife_Crimson_Web.png  
 - `--n_neighbours ` How many neighbours to target image should be returned as output.  
